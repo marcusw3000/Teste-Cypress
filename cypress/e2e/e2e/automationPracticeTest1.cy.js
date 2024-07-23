@@ -25,7 +25,7 @@ describe('Login', () => {
     });
 
     describe('Cadastro', () => {
-        it.only('Tentativa de criação de usuario com senha insuficiente', () => {
+        it('Tentativa de criação de usuario com senha insuficiente', () => {
             cy.visit("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account")
 
             cy.get('#email_create').type('testinguser123@email.com')
